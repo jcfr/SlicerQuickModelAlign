@@ -19,7 +19,7 @@ It is freely usable, without any restrictions.
 - Inspect results: 
 
 ## Visualize and Analyze results
-There are 3 display modes to visualize and analyze the comparison results
+There are 3 display modes available to visualize and analyze the comparison results
 ### 1. Normal Mode (Default)
 
 The advantage of this mode is that it allows the most simple visualization of the aligned models.

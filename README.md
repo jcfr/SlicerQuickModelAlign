@@ -52,8 +52,13 @@ To enable this display mode, press "2" on keyboard
 
 ### Animation
 
-Note that by default, there is a live animation that goes back and forth between the two models to aid in visualization.
+- Note that by default, there is a live animation that goes back and forth between the two models to aid in visualization.
 To start or stop the animation, press "spacebar" on keyboard
+
+### Measurement
+
+- Note that precise measurements of the models can be done via the ruler function (lower-left tab). 
+- To delete the measurement, click the 'trash' icon.
 
 ## Advanced Settings
 

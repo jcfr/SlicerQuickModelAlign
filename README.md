@@ -11,7 +11,7 @@ It is freely usable, without any restrictions.
 
 - Download and install a latest stable version of 3D Slicer [https://download.slicer.org]
 - Start 3D Slicer application, open the Extension Manager (menu: View/Extension manager)
-- Install QuickAlign extension
+- Install **QuickAlign** extension
 
 ## Tutorial
 - Start 3D Slicer
@@ -47,9 +47,8 @@ To enable this display mode, press "2" on keyboard
 
 - The advantage of this display mode is that it visually highlights areas of difference between the aligned models in colors (Red/Blue).
 
-
-Colour 'Red' - highlights areas in the 'Prepared" model' that are excess or "under-prepared" compared to the ideal.
-Colour 'Blue' - highlights areas in the "Prepared" model that are deficient or "over-prepared" compared to the 'Ideal' model.
+-Colour 'Red' - highlights areas in the 'Prepared" model' that are excess or "under-prepared" compared to the ideal.
+-Colour 'Blue' - highlights areas in the "Prepared" model that are deficient or "over-prepared" compared to the 'Ideal' model.
 
 To enable this display mode, press "3" on keyboard
 

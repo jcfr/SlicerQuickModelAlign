@@ -4,7 +4,10 @@ This is a 3D Slicer extension that allows for rapid alignment and comparison (vi
 
 It is freely usable, without any restrictions.
 
-This software was made with the end-user in mind. It is simple and easy to use.
+This software was made with the end-user in mind. 
+
+It is simple and easy to use.
+
 The best part - all it takes is just one click and is near instant.
 
 <img width="983" alt="Screen Shot 2023-05-31 at 2 50 54 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/56f2cdb4-c033-4156-853b-6ff4efbe1978">

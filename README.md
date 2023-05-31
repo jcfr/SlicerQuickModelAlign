@@ -3,6 +3,8 @@
 This is a 3D Slicer extension that allows for rapid alignment and comparison (visual & metric) of two 3D models using ALPACA's point-cloud based alignment approach.
 
 It is freely usable, without any restrictions.
+<img width="685" alt="Screen Shot 2023-05-31 at 2 27 11 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/1cb0cf1f-5cda-4808-b367-ef885516e103">
+
 
 ## Installation
 

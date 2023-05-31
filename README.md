@@ -46,11 +46,9 @@ To enable this display mode, press "2" on keyboard
 <img width="509" alt="Screen Shot 2023-05-31 at 2 26 45 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/9f337404-55ba-49ce-9403-6368d2ce0665">
 
 - The advantage of this display mode is that it visually highlights areas of difference between the aligned models in colors (Red/Blue).
-
 - Colour 'Red': highlights areas in the 'Prepared" model' that are excess or "under-prepared" compared to the ideal.
 - Colour 'Blue': highlights areas in the "Prepared" model that are deficient or "over-prepared" compared to the 'Ideal' model.
-
-To enable this display mode, press "3" on keyboard
+- To enable this display mode, press "3" on keyboard
 
 ### Animation
 

@@ -69,7 +69,8 @@ The concept of error tolerance is that it takes into account possible micro-erro
 
 ## Publications
 
-- Choi, S, Choi, J, Peters, OA, Peters, CI. Design of an interactive system for access cavity assessment: A novel feedback tool for preclinical endodontics. Eur J Dent Educ. 2023; 00: 1- 9. https://doi:10.1111/eje.12895
+- Choi, S, Choi, J, Peters, OA, Peters, CI. Design of an interactive system for access cavity assessment: A novel feedback tool for preclinical endodontics. Eur J Dent Educ. 2023; 00: 1- 9. doi:10.1111/eje.12895
+- https://onlinelibrary.wiley.com/doi/epdf/10.1111/eje.12895
 
 ## Acknowledgments
 

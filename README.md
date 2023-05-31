@@ -23,16 +23,24 @@ There are 3 display modes available to visualize and analyze the comparison resu
 ### 1. Normal Mode (Default)
 
 The advantage of this mode is that it allows the most simple visualization of the aligned models.
+To enable this display mode, press "1" on keyboard
 
 ### 2. Wireframe Mode
 
 The advantage of this display mode is that it allows visualization of the internal layers and structures of the aligned models.
+To enable this display mode, press "2" on keyboard
 
 ### 3. Colour Map Mode
 
 The advantage of this display mode is that it visually highlights areas of difference between the aligned models in colors (Red/Blue).
 Colour 'Red' - 
 Colour 'Blue' - 
+To enable this display mode, press "3" on keyboard
+
+### Animation
+
+Note that by default, there is a live animation that goes back and forth between the two models to aid in visualization.
+To start or stop the animation, press "spacebar" on keyboard
 
 ## Advanced Settings
 

@@ -1,6 +1,6 @@
 # QuickAlign
 
-This is a 3D Slicer extension that allows for rapid alignment and comparison (visual & metric) of two 3D models using ALPACA's point-cloud based alignment approach.
+This is a 3D Slicer extension that allows for rapid alignment and comparison (visual & metric) of two 3D models using ALPACA's point-cloud based alignment capabilities.
 
 It is freely usable, without any restrictions.
 

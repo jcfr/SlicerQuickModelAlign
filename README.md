@@ -13,6 +13,11 @@ It is freely usable, without any restrictions.
 - Start 3D Slicer application, open the Extension Manager (menu: View/Extension manager)
 - Install **QuickAlign** extension
 
+## How to cite
+
+If you use QuickAlign in your research, please cite this publication.
+- Choi, S, Choi, J, Peters, OA, Peters, CI. Design of an interactive system for access cavity assessment: A novel feedback tool for preclinical endodontics. Eur J Dent Educ. 2023; 00: 1- 9. doi:10.1111/eje.12895 (Open access)
+
 ## Tutorial
 - Start 3D Slicer
 - Switch to "Quick Align" module: if first time opening the module, wait for additional installations to complete 
@@ -70,14 +75,11 @@ The concept of error tolerance is that it takes into account possible micro-erro
 ## Publications
 
 - Choi, S, Choi, J, Peters, OA, Peters, CI. Design of an interactive system for access cavity assessment: A novel feedback tool for preclinical endodontics. Eur J Dent Educ. 2023; 00: 1- 9. doi:10.1111/eje.12895
-- https://onlinelibrary.wiley.com/doi/epdf/10.1111/eje.12895
-- Please use this citation to make references to any publications, presentations, or successful funding applications that make use of this software module.
 
 ## Acknowledgments
 
 - This module is built using Slicermorph - ALPACA as a foundation for the registration capability (developed by Arthur Porto, Sara Rolfe, and Murat Maga) [https://doi.org/10.1111/2041-210X.13689]
 - Dr. Sean Choi has led development of this extension project to enable quick, simple alignment of 3D models, and the various visual display modes. Thank you also to Dr. Ryan Choi, Prof. Ove Peters (UQ), and Dr. Christine Peters (UQ) for significant contributions to this research project.
-
 
 ## Questions or Inquiries
 

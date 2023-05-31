@@ -31,23 +31,27 @@ There are 3 display modes available to visualize and analyze the comparison resu
 
 <img width="633" alt="Screen Shot 2023-05-31 at 2 44 28 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/b0ae5efa-1cf2-465f-aa62-db7723ae33e2">
 
-The advantage of this mode is that it allows the most simple visualization of the aligned models.
+- The advantage of this mode is that it allows the most simple visualization of the aligned models.
 To enable this display mode, press "1" on keyboard
 
 ### 2. Wireframe Mode
 
 <img width="882" alt="Screen Shot 2023-05-31 at 2 26 38 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/7e96ed5c-c24f-45c9-9f71-3fd379fc2ad9">
 
-The advantage of this display mode is that it allows visualization of the internal layers and structures of the aligned models.
+- The advantage of this display mode is that it allows visualization of the internal layers and structures of the aligned models.
 To enable this display mode, press "2" on keyboard
 
 ### 3. Colour Map Mode
 
 <img width="509" alt="Screen Shot 2023-05-31 at 2 26 45 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/9f337404-55ba-49ce-9403-6368d2ce0665">
 
-The advantage of this display mode is that it visually highlights areas of difference between the aligned models in colors (Red/Blue).
+- The advantage of this display mode is that it visually highlights areas of difference between the aligned models in colors (Red/Blue).
+
+
 Colour 'Red' - highlights areas in the 'Prepared" model' that are excess or "under-prepared" compared to the ideal.
+
 Colour 'Blue' - highlights areas in the "Prepared" model that are deficient or "over-prepared" compared to the 'Ideal' model.
+
 To enable this display mode, press "3" on keyboard
 
 ### Animation

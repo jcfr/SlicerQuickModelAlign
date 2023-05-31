@@ -1,6 +1,6 @@
 # SlicerQuickAlign
 
-This is a 3D Slicer extension for quick alignment and comparison (visual & metric) of two 3D models using ALPACA's rapid point-cloud based alignment capabilities.
+This is a 3D Slicer extension that allows for rapid alignment and comparison (visual & metric) of two 3D models using ALPACA's point-cloud based alignment approach.
 
 It is freely usable, without any restrictions.
 
@@ -13,6 +13,10 @@ It is freely usable, without any restrictions.
 ## Tutorial
 - Start 3D Slicer
 - Switch to "Quick Align" module
+- Load the two 3D model files (supports .ply format only - for now) being compared on the left tab
+- Click 'Load Models': The two models will be reduced to point-cloud based representation, ready for alignment
+- Click 'Align Models': Wait about 5 seconds for software to run alignment & analysis
+- Inspect results: 
 
 ## Visualize and Analyze results
 There are 3 display modes to visualize and analyze the comparison results
@@ -29,3 +33,11 @@ The advantage of this display mode is that it allows visualization of the intern
 The advantage of this display mode is that it visually highlights areas of difference between the aligned models in colors (Red/Blue).
 Colour 'Red' - 
 Colour 'Blue' - 
+
+## Advanced Settings
+
+
+## Acknowledgments
+
+
+

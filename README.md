@@ -12,7 +12,7 @@ It is freely usable, without any restrictions.
 
 ## Tutorial
 - Start 3D Slicer
-- Switch to "Quick Align" module
+- Switch to "Quick Align" module: If it is the first time opening the module, automatic additional installations may follow
 - Load the two 3D model files (supports .ply format only - for now) being compared on the left tab
 - Click 'Load Models': The two models will be reduced to point-cloud based representation, ready for alignment
 - Click 'Align Models': Wait about 5 seconds for software to run alignment & analysis

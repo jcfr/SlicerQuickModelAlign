@@ -49,7 +49,6 @@ To enable this display mode, press "2" on keyboard
 
 
 Colour 'Red' - highlights areas in the 'Prepared" model' that are excess or "under-prepared" compared to the ideal.
-
 Colour 'Blue' - highlights areas in the "Prepared" model that are deficient or "over-prepared" compared to the 'Ideal' model.
 
 To enable this display mode, press "3" on keyboard
@@ -63,7 +62,7 @@ To start or stop the animation, press "spacebar" on keyboard
 
 ### Error Tolerance
 
-Error tolerance (mm) can be adjusted under "advanced settings" header in the left tab.
+- Error tolerance (mm) can be adjusted under "advanced settings" header in the left tab.
 The concept of error tolerance is that it takes into account possible micro-errors in the alignment, or during the scanning & capturing of 3D data. In the colour map mode, only differences exceeding this error tolerance will be highlighted in color (red/blue). The initial value is set to 0.15mm (recommended).
 
 ## Publications

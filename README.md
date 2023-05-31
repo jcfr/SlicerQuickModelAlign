@@ -47,8 +47,8 @@ To enable this display mode, press "2" on keyboard
 
 - The advantage of this display mode is that it visually highlights areas of difference between the aligned models in colors (Red/Blue).
 
--Colour 'Red' - highlights areas in the 'Prepared" model' that are excess or "under-prepared" compared to the ideal.
--Colour 'Blue' - highlights areas in the "Prepared" model that are deficient or "over-prepared" compared to the 'Ideal' model.
+- Colour 'Red': highlights areas in the 'Prepared" model' that are excess or "under-prepared" compared to the ideal.
+- Colour 'Blue': highlights areas in the "Prepared" model that are deficient or "over-prepared" compared to the 'Ideal' model.
 
 To enable this display mode, press "3" on keyboard
 

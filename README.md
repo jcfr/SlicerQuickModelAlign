@@ -4,7 +4,7 @@ This is a 3D Slicer extension that allows for rapid alignment and comparison (vi
 
 It is freely usable, without any restrictions.
 
-<img width="685" alt="Screen Shot 2023-05-31 at 2 27 11 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/1cb0cf1f-5cda-4808-b367-ef885516e103">
+<img width="983" alt="Screen Shot 2023-05-31 at 2 50 54 am" src="https://github.com/seanchoi0519/SlicerQuickAlign/assets/33897705/56f2cdb4-c033-4156-853b-6ff4efbe1978">
 
 
 ## Installation

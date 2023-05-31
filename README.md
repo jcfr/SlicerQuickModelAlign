@@ -64,11 +64,13 @@ The concept of error tolerance is that it takes into account possible micro-erro
 
 ## Publications
 
-Choi, S, Choi, J, Peters, OA, Peters, CI. Design of an interactive system for access cavity assessment: A novel feedback tool for preclinical endodontics. Eur J Dent Educ. 2023; 00: 1- 9. doi:10.1111/eje.12895
+- Choi, S, Choi, J, Peters, OA, Peters, CI. Design of an interactive system for access cavity assessment: A novel feedback tool for preclinical endodontics. Eur J Dent Educ. 2023; 00: 1- 9. doi:10.1111/eje.12895
 
 ## Acknowledgments
 
-This module was initially developed by Arthur Porto, Sara Rolfe, and Murat Maga for SlicerMorph - ALPACA. Modifications of the code have been made by Dr. Sean Choi to enable quick, simple alignment of 3D models, and the various visual display modes allow for simple, easy visual comparison of the differences between the models. Also, thank you to Dr. Ryan Choi, Prof. Ove Peters (UQ), and Dr. Christine Peters (UQ) for significant contributions to this research project.
+- This module is built using Slicermorph - ALPACA as a foundation for the registration capability (developed by Arthur Porto, Sara Rolfe, and Murat Maga).
+- Porto, A., Rolfe, S., & Maga, A. M. (2021). ALPACA: A fast and accurate computer vision approach for automated landmarking of three-dimensional biological structures. Methods in Ecology and Evolution, 12, 2129– 2144. https://doi.org/10.1111/2041-210X.13689
+- Dr. Sean Choi has led further development of this project to enable quick, simple alignment of 3D models, and the various visual display modes. Thank you to Dr. Ryan Choi, Prof. Ove Peters (UQ), and Dr. Christine Peters (UQ) for significant contributions to this research project.
 
 
 

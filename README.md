@@ -25,6 +25,7 @@ If you use QuickAlign in your research, please cite this publication.
 - Click 'Load Models': The two models will be reduced to point-cloud based representation, ready for alignment
 - Click 'Align Models': Wait about 5 seconds for software to run alignment & analysis
 - Inspect results. Press '1', '2', '3' to navigate between different display mode options.
+- Press 'spacebar' to start & stop animation.
 
 ### User Interface Overview
 

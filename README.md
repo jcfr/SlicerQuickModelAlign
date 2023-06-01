@@ -20,7 +20,7 @@ If you use QuickAlign in your research, please cite this publication.
 
 ## Tutorial
 - Start 3D Slicer
-- Switch to "Quick Align" module: if first time opening the module, wait for additional installations to complete 
+- Switch to "Quick Align" module (Modules > Registration > QuickAlign). If first time opening the module, wait for additional installations to complete 
 - Load the two 3D model files (supports .ply format only - for now) being compared on the left tab
 - Click 'Load Models': The two models will be reduced to point-cloud based representation, ready for alignment
 - Click 'Align Models': Wait about 5 seconds for software to run alignment & analysis

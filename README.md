@@ -80,11 +80,11 @@ The concept of error tolerance is that it takes into account possible micro-erro
 ## Acknowledgments
 
 - This module is built using Slicermorph - ALPACA as a foundation for the registration capability (developed by Arthur Porto, Sara Rolfe, and Murat Maga) [https://doi.org/10.1111/2041-210X.13689]
-- Dr. Sean Choi has led development of this extension project to enable quick, simple alignment of 3D models, and the various visual display modes. Thank you also to Prof. Ove Peters (UQ), and Dr. Christine Peters (UQ), and Dr. Ryan Choi (UQ) for significant contributions to this research project.
+- Dr. Sean Choi has led development of this extension project to enable quick, simple alignment of 3D models, and the various visual display modes. Thank you also to Prof. Ove Peters (UQ), and Dr. Christine Peters (UQ), and Dr. Ryan Choi (UQ) for significant contributions to the development of this extension.
 
 ## Questions or Inquiries
 
-- Please direct all inquires to Dr. Sean Choi: seanchoi05@gmail.com via email. 
+- Please direct all development & collaboration inquires to Dr. Sean Choi: seanchoi05@gmail.com via email. 
 
 ## Copyright and Licensing
 

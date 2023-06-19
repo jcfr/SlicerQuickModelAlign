@@ -15,7 +15,7 @@ It is freely usable, without any restrictions.
 
 ## How to cite
 
-If you use QuickAlign in your research, please cite this publication.
+If you use QuickModelAlign in your research, please cite this publication.
 - Choi, S, Choi, J, Peters, OA, Peters, CI. Design of an interactive system for access cavity assessment: A novel feedback tool for preclinical endodontics. Eur J Dent Educ. 2023; 00: 1- 9. doi:10.1111/eje.12895 (Open access)
 
 ## Tutorial

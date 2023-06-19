@@ -25,7 +25,7 @@ class QuickModelAlign(ScriptedLoadableModule):
   def __init__(self, parent):
     ScriptedLoadableModule.__init__(self, parent)
     self.parent.title = "QuickModelAlign"
-    self.parent.categories = ["Registration"]
+    self.parent.categories = ["QuickModelAlign"]
     self.parent.dependencies = []
     self.parent.contributors = ["Arthur Porto (LSU), Sara Rolfe (UW), Murat Maga (UW), Dr. Sean Choi"]
     self.parent.helpText = """

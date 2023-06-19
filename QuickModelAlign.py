@@ -14,17 +14,17 @@ from datetime import datetime
 import time
 
 #
-# QuickAlign
+# QuickModelAlign
 #
 
-class QuickAlign(ScriptedLoadableModule):
+class QuickModelAlign(ScriptedLoadableModule):
   """Uses ScriptedLoadableModule base class, available at:
     https://github.com/Slicer/Slicer/blob/master/Base/Python/slicer/ScriptedLoadableModule.py
     """
 
   def __init__(self, parent):
     ScriptedLoadableModule.__init__(self, parent)
-    self.parent.title = "QuickAlign"
+    self.parent.title = "QuickModelAlign"
     self.parent.categories = ["SlicerMorph.Geometric Morphometrics"]
     self.parent.dependencies = []
     self.parent.contributors = ["Arthur Porto (LSU), Sara Rolfe (UW), Murat Maga (UW), Dr. Sean Choi"]
@@ -39,10 +39,10 @@ Dr. Sean Choi has led development of this extension project to enable quick, sim
 
 
 #
-# QuickAlignWidget
+# QuickModelAlignWidget
 #
 
-class QuickAlignWidget(ScriptedLoadableModuleWidget):
+class QuickModelAlignWidget(ScriptedLoadableModuleWidget):
   """Uses ScriptedLoadableModuleWidget base class, available at:
     https://github.com/Slicer/Slicer/blob/master/Base/Python/slicer/ScriptedLoadableModule.py
     """
@@ -61,7 +61,7 @@ class QuickAlignWidget(ScriptedLoadableModuleWidget):
       import cpdalp
       from packaging import version
       if version.parse(o3d.__version__) != version.parse(Open3dVersion):
-        if not slicer.util.confirmOkCancelDisplay(f"QuickAlign requires installation of open3d (version {Open3dVersion}).\nClick OK to upgrade open3d and restart the application."):
+        if not slicer.util.confirmOkCancelDisplay(f"QuickModelAlign requires installation of open3d (version {Open3dVersion}).\nClick OK to upgrade open3d and restart the application."):
           #self.ui.showBrowserOnEnter = False
           return
         needRestart = True
@@ -137,7 +137,7 @@ class QuickAlignWidget(ScriptedLoadableModuleWidget):
     # Make scaling of models optional
     self.skipScalingCheckBox = qt.QCheckBox()
     self.skipScalingCheckBox.checked = 1
-    self.skipScalingCheckBox.setToolTip("If checked, QuickAlign will skip scaling during the alignment (Not recommended).")
+    self.skipScalingCheckBox.setToolTip("If checked, QuickModelAlign will skip scaling during the alignment (Not recommended).")
     #alignSingleWidgetLayout.addRow("Skip scaling", self.skipScalingCheckBox)
 
     [self.projectionFactor,self.pointDensity, self.errorToleranceValue, self.normalSearchRadius, self.FPFHSearchRadius, self.distanceThreshold, self.maxRANSAC, self.RANSACConfidence,
@@ -219,7 +219,7 @@ class QuickAlignWidget(ScriptedLoadableModuleWidget):
     self.loadModelsButton.enabled = bool ( self.sourceModelSelector.currentPath and self.targetModelSelector.currentPath)
 
   def onLoadModelsButton(self):
-    logic = QuickAlignLogic()
+    logic = QuickModelAlignLogic()
     sourceModelNode = slicer.util.loadModel(self.sourceModelSelector.currentPath)
     targetModelNode = slicer.util.loadModel(self.targetModelSelector.currentPath)
 
@@ -262,7 +262,7 @@ class QuickAlignWidget(ScriptedLoadableModuleWidget):
     self.rulerWidget.show()
 
   def alignModels(self):
-    logic = QuickAlignLogic()
+    logic = QuickModelAlignLogic()
     self.transformMatrix = logic.estimateTransform(self.sourcePoints, self.targetPoints, self.sourceFeatures, self.targetFeatures, self.voxelSize, self.skipScalingCheckBox.checked, self.parameterDictionary)
     self.ICPTransformNode = logic.convertMatrixToTransformNode(self.transformMatrix, 'Rigid Transformation Matrix')
 
@@ -279,7 +279,7 @@ class QuickAlignWidget(ScriptedLoadableModuleWidget):
   def displayAlignedMesh(self):
     from open3d import geometry
     from open3d import utility
-    logic = QuickAlignLogic()
+    logic = QuickModelAlignLogic()
     # Display target points
     self.targetModelNode = slicer.util.loadModel(self.targetModelSelector.currentPath)
     self.sourceModelNode = slicer.util.loadModel(self.sourceModelSelector.currentPath)
@@ -662,10 +662,10 @@ class QuickAlignWidget(ScriptedLoadableModuleWidget):
 
  
 #
-# QuickAlignLogic
+# QuickModelAlignLogic
 #
 
-class QuickAlignLogic(ScriptedLoadableModuleLogic):
+class QuickModelAlignLogic(ScriptedLoadableModuleLogic):
 
 
   def RAS2LPSTransform(self, modelNode):

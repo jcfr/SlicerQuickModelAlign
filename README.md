@@ -1,4 +1,4 @@
-# QuickAlign
+# QuickModelAlign
 
 This is a 3D Slicer extension that allows for rapid alignment and comparison (visual & metric) of two 3D models using ALPACA's point-cloud based alignment capabilities.
 
@@ -11,7 +11,7 @@ It is freely usable, without any restrictions.
 
 - Download and install a latest stable version of 3D Slicer [https://download.slicer.org]
 - Start 3D Slicer application, open the Extension Manager (menu: View/Extension manager)
-- Install **QuickAlign** extension
+- Install **QuickModelAlign** extension
 
 ## How to cite
 
@@ -20,7 +20,7 @@ If you use QuickAlign in your research, please cite this publication.
 
 ## Tutorial
 - Start 3D Slicer
-- Switch to "Quick Align" module (Modules > Registration > QuickAlign). If first time opening the module, wait for additional installations to complete 
+- Switch to "QuickModelAlign" module (Modules > Registration > QuickModelAlign). If first time opening the module, wait for additional installations to complete 
 - Import two 3D model files (supports .ply format only - for now) to compare on the left tab
 - Click 'Load Models': The two models will be reduced to point-cloud based representation, ready for alignment
 - Click 'Align Models': Wait about 5 seconds for software to run alignment & analysis

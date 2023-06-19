@@ -25,12 +25,11 @@ class QuickModelAlign(ScriptedLoadableModule):
   def __init__(self, parent):
     ScriptedLoadableModule.__init__(self, parent)
     self.parent.title = "QuickModelAlign"
-    self.parent.categories = ["SlicerMorph.Geometric Morphometrics"]
+    self.parent.categories = ["Registration"]
     self.parent.dependencies = []
     self.parent.contributors = ["Arthur Porto (LSU), Sara Rolfe (UW), Murat Maga (UW), Dr. Sean Choi"]
     self.parent.helpText = """
-      This module automatically transfers landmarks on a reference 3D model (mesh) to a target 3D model using dense correspondence and deformable registration. First optimize the parameters in single alignment analysis, then use them in batch mode to apply to all 3D models.
-      <p>For more information see the <a href="https://github.com/SlicerMorph/SlicerMorph/tree/master/Docs/ALPACA">online documentation.</a>.</p>
+      This module automatically aligns and compares two given models, allowing easy, clear visualization of the differences between the models.
       """
     self.parent.acknowledgementText = """
      This module is built using Slicermorph - ALPACA as a foundation for the registration capability (developed by Arthur Porto, Sara Rolfe, and Murat Maga) [https://doi.org/10.1111/2041-210X.13689]

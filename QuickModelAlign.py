@@ -179,7 +179,7 @@ class QuickModelAlignWidget(ScriptedLoadableModuleWidget):
     self.sourceModelSelector.connect('validInputChanged(bool)', self.onSelect)
     self.targetModelSelector.connect('validInputChanged(bool)', self.onSelect)
     self.projectionFactor.connect('valueChanged(double)', self.onSelect)
-    self.errorToleranceValue.connect('valueChanged(double)', self.onSelect)
+    self.errorToleranceValue.connect('valueChanged(double)', self.onChangeTolerance)
     self.loadModelsButton.connect('clicked(bool)', self.onLoadModelsButton)
     self.startAlignButton.connect('clicked(bool)', self.onStartAlignButton)
     self.clearButton.connect('clicked(bool)', self.clearScene)
@@ -309,6 +309,12 @@ class QuickModelAlignWidget(ScriptedLoadableModuleWidget):
 
     tolerableErrorMargin = self.errorToleranceValue.value
 
+    moduleDir = os.path.dirname(slicer.util.modulePath(self.__module__))
+    #iconPath = os.path.join(moduleDir, 'Resources/Icons', imageFileName)
+    self.redColorMapPath = moduleDir +'/Resources/CustomColorMaps/red.txt'
+    self.blueColorMapPath = moduleDir +'/Resources/CustomColorMaps/blue.txt'
+
+
     #   Color the Source Model
     distanceFilter = vtk.vtkDistancePolyDataFilter()
     distanceFilter.SetInputData(0, m1.GetPolyData())
@@ -316,7 +322,9 @@ class QuickModelAlignWidget(ScriptedLoadableModuleWidget):
     distanceFilter.Update()
     m1.SetAndObservePolyData( distanceFilter.GetOutput() )
     m1.GetDisplayNode().SetActiveScalarName('Distance')
-    m1.GetDisplayNode().SetAndObserveColorNodeID('vtkMRMLColorTableNodeFileColdToHotRainbow.txt')
+    customBlueTxtFilePath = self.blueColorMapPath
+    customBlueColorMapTable = slicer.util.loadColorTable(customBlueTxtFilePath, False)
+    m1.GetDisplayNode().SetAndObserveColorNodeID(customBlueColorMapTable.GetID())
     m1.GetDisplayNode().SetScalarRangeFlag(0)
     m1.GetDisplayNode().SetScalarRange(-tolerableErrorMargin, tolerableErrorMargin)
     
@@ -327,11 +335,21 @@ class QuickModelAlignWidget(ScriptedLoadableModuleWidget):
     distanceFilter2.Update()
     m2.SetAndObservePolyData( distanceFilter2.GetOutput() )
     m2.GetDisplayNode().SetActiveScalarName('Distance')
-    m2.GetDisplayNode().SetAndObserveColorNodeID('vtkMRMLColorTableNodeFileHotToColdRainbow.txt')
+    customRedTxtFilePath = self.redColorMapPath
+    customRedColorMapTable = slicer.util.loadColorTable(customRedTxtFilePath, False)
+    m2.GetDisplayNode().SetAndObserveColorNodeID(customRedColorMapTable.GetID())
     m2.GetDisplayNode().SetScalarRangeFlag(0)
     m2.GetDisplayNode().SetScalarRange(-tolerableErrorMargin, tolerableErrorMargin)
 
 
+  def onChangeTolerance(self):
+    #
+    tolerableErrorMargin = self.errorToleranceValue.value
+    m1 = self.sourceModelNode
+    m2 = self.targetModelNode
+    m1.GetDisplayNode().SetScalarRange(-tolerableErrorMargin, tolerableErrorMargin)
+    m2.GetDisplayNode().SetScalarRange(-tolerableErrorMargin, tolerableErrorMargin)
+   
 
   def showMinimalScreenUI(self):
   
@@ -489,6 +507,9 @@ class QuickModelAlignWidget(ScriptedLoadableModuleWidget):
 
     moduleDir = os.path.dirname(slicer.util.modulePath(self.__module__))
     iconPath = os.path.join(moduleDir, 'Resources/Icons', imageFileName)
+    self.redColorMapPath = moduleDir +'/Resources/CustomColorMaps/red.txt'
+    self.blueColorMapPath = moduleDir +'/Resources/CustomColorMaps/blue.txt'
+    
     layoutSwitchAction.setIcon(qt.QIcon(iconPath))
     layoutSwitchAction.setToolTip(toolTip)
     layoutSwitchAction.connect('triggered()', lambda layoutId = layoutID: slicer.app.layoutManager().setLayout(layoutId))
